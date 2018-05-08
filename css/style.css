@@ -22,21 +22,29 @@ h3, p{
     font-weight: 100;
     padding: 5px;
 }
-h4{
-
+h4, h5{
+font-family: "avenir", san-serif;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 100;
+    text-align: center
+}
+h5{
+    font-size: 14px;
 }
 p{
     font-size: 14px;
 }
 a{
     text-decoration: none;
+    color: #fff;
 }
 /* header */
 header{
     background: linear-gradient(45deg, rgba(2,204,186,0.7), rgba(2,179,228,0.7));
     width: 100vw;
     position: fixed;
-    padding: 30px 30px;
+    padding: 20px 30px;
 }
 nav {
     display: inline-block;
@@ -92,13 +100,13 @@ nav a:hover{
 .home-container, about, portfolio, contact{
     height: 100vh;
 }
-.home-container img{
-    max-width: 95vw;
-    position: absolute;
-    top: 85px;
-    left: 0;
-    right: 0;
-    margin: auto;
+.home-img{
+   width: 95vw;
+    height: 100vh;
+    margin: 0 auto;
+    background: url(../images/home/masa-wu-landing-page-img.jpg) no-repeat fixed center;
+    background-size: cover;
+
 }
 .home-text-box{
     height:30vh;
@@ -220,4 +228,65 @@ q {font-style: italic;
 .about-me *{
     margin-top: 20px;
     max-width: 550px;
+}
+
+/* portfolio*/
+
+.heading{
+    padding: 20px;
+}
+
+.porfolio-content{
+    display: flex;
+    justify-content: space-around;
+}
+.viewfinders, .huset, .yfu{
+    background: linear-gradient(45deg, rgba(2,204,186,0.1), rgba(2,179,228,0.1));
+    padding-top: 30px;
+    width: 320px;
+}
+.white-circle{
+    width:240px;
+    height:240px;
+    background-color: #fff;
+    border-radius: 150px;
+    position: relative;
+    margin: 0 auto;
+}
+.white-circle img{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.bottom-box{
+    background-color: #414143;
+    padding: 15px;
+    margin-top: 20px;
+}
+.bottom-box a{
+    font-family: "avenir", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+}
+.hide{
+    opacity: 0;
+}
+@media only screen and (max-width: 700px) {
+   .home-text-box{
+    height:45vh;
+    width: 90vw;}
+    .mini-footer{
+        left:0;
+    }
+    .mini-footer a, .email-me{
+        display: none;
+    }
+    .about, .porfolio-content{
+        flex-direction: column;}
 }
