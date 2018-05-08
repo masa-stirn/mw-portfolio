@@ -7,24 +7,24 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <title>Masa Wu Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" type="text/css" >
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
     <div class="main-container">
         <section class="home">
             <header>
-               <!-- logo name magic -->
+                <!-- logo name magic -->
                 <div>
-                <ul class="text hide">
-                    <li>M</li>
-                    <li class="ghost">A</li>
-                    <li class="ghost">S</li>
-                    <li class="ghost">A</li>
-                    <li class="ghost">&nbsp;</li>
-                    <li>W</li>
-                    <li class="ghost">U</li>
-                </ul>
+                    <ul class="text hide">
+                        <li>M</li>
+                        <li class="ghost">A</li>
+                        <li class="ghost">S</li>
+                        <li class="ghost">A</li>
+                        <li class="ghost">&nbsp;</li>
+                        <li>W</li>
+                        <li class="ghost">U</li>
+                    </ul>
                 </div>
                 <nav>
                     <div class="navigation">
@@ -32,40 +32,57 @@
                         <a href="#">ABOUT</a>
                         <a href="#">PORTFOLIO</a>
                         <a href="#">CONTACT</a>
+                        <a href="" class="email-me">EMAIL ME</a>
                     </div>
                 </nav>
-                <div class="email-me">
-                    <a href="">EMAIL ME</a>
-                </div>
+
             </header>
             <div class="home-container">
-                <img src="" alt="home full screen background image" class="home-img">
-                <div class="home-text">
+                <img src="images/home/masa-wu-landing-page-img.jpg" alt="home full screen background image" class="home-img">
+                <div class="home-text-box">
                     <h1 class="home-text-intro">PASSIONATE DESIGNER & DEVELOPER</h1>
-                    <h3 class="home-text-quotes"></h3>
-                    <div class="controls">
-                      <div id="Cslide1" class="dot" onclick="currentSlide(1)"></div>
-                      <div id="Cslide2" class="dot" onclick="currentSlide(2)"></div>
-                      <div id="Cslide3" class="dot" onclick="currentSlide(3)"></div>
-                      <div id="Cslide4" class="dot" onclick="currentSlide(4)"></div>
-                      <div id="Cslide5" class="dot" onclick="currentSlide(5)"></div>
+                    <div class="slideshow-container">
+
+                        <div class="mySlides">
+                            <q>If at first idea is not absurd then it is no hope for it.
+                            </q>
+                            <p class="author">- Albert Einstein</p>
+                        </div>
+
+                        <div class="mySlides">
+                            <q>Design is the bridge between technology and people.</q>
+                            <p class="author">- Donald Norman</p>
+                        </div>
+
+                        <div class="mySlides">
+                            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                            <p class="author">- Thomas A. Edison</p>
+                        </div>
+                        <div class="dot-container">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-            <div class="mini-footer">
+                <div class="mini-footer">
                 <i class="fab fa-linkedin-in"></i>
                 <i class="fab fa-github"></i>
                 <i class="fab fa-codepen"></i>
-                <a href="">READ MORE</a>
-                <img src="" alt="down arrow image" class="down-arrow">
+
+                <i class="fas fa-arrow-down"></i>
+                <a href="#about">READ MORE</a>
             </div>
+            </div>
+
         </section>
         <section class="about">
             <div class="resume">
-                <img src="images/home/masa-wu-landing-page-img.jpg" alt="image of designed resume" class="resume-img">
+                <img src="images/home/resume-masa-wu.png" alt="image of designed resume" class="resume-img">
             </div>
             <div class="about-me">
-                <img src="images/home/resume-masa-wu.png" alt="masa wu profile photo" class="my-img">
+                <img src="images/home/masa-wu-avatar-img.png" alt="masa wu profile photo" class="my-img">
                 <h1>Designer & Developer</h1>
                 <h3>Hi. I design pixel perfect products and user interfaces that focus on delivering quality user experiences. </h3>
                 <p>I am a student at Kea Copenhagen School of Design and Technology, who is passionate about designing seamless solutions, diverse narratives while embracing team collaborations. I am highly motivated and eager to constantly improve, challenge myself and learn as much as possible to produce meaningful user-centered designs. I love working with other inspiring people who feel the same way as I do.</p>
@@ -122,7 +139,7 @@
             <div class="contact-box">
                 <h2>Conntact me and lets design beautiful things</h2>
                 <a href="">GET CV</a>
-                <a href="">EMAIL ME</a>
+                <a href="" class="rmail-me">EMAIL ME</a>
                 <div class="grey-side"></div>
             </div>
         </section>
@@ -156,5 +173,56 @@
     </div>
 
 </body>
+<script>
+    //dots slide show
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+
+    //Logo name magic
+    //    var text = document.querySelectorAll(".text");
+    //
+    //    window.scroll
+    //
+    //    $(function () {
+    //        var text = $(".text");
+    //        $(window).scroll(function () {
+    //            var scroll = $(window).scrollTop();
+    //            if (scroll >= 200) {
+    //                text.removeClass("hidden");
+    //            }
+    //            else {
+    //                text.addClass("hidden");
+    //            }
+    //        });
+    //    });
+</script>
 
 </html>

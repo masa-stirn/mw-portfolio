@@ -5,18 +5,64 @@
 }
 h1{
     font-family: "freight-text-pro", serif;
-font-style: normal;
-font-weight: 300;
-    font-size: 40;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2em;
+    color: #02B3E2;
+    text-align: center;
+    padding: 5px;
+}
+h2{
+
+}
+h3, p{
+   font-family: "avenir", san-serif;
+    font-size: 20px;
+    color: #02B3E2;
+    font-weight: 100;
+    padding: 5px;
+}
+h4{
+
+}
+p{
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
 }
 /* header */
 header{
-    background: linear-gradient(45deg, #02CCBA, #02B3E4);
-    height: 50px;
+    background: linear-gradient(45deg, rgba(2,204,186,0.7), rgba(2,179,228,0.7));
+    width: 100vw;
+    position: fixed;
+    padding: 30px 30px;
+}
+nav {
+    display: inline-block;
+    float: right;
+}
+nav a{
+    color: #fff;
+    font-family: "avenir", san-serif;
+    font-size: 12px;
+    display: inline-block;
+    padding: 10px;
+}
+nav a:hover{
+    color: #e7e7e7;
+}
+.email-me{
+    border: 2px solid white;
+    border-radius: 4px;
+}
+.email-me:hover{
+    background: #fff;
+    color: #02B3E2;
 }
 /* logo magic */
 .text {
-    transform: translateX(-5%) translateY(-50%);
+/*    transform: translateX(-5%) translateY(-50%);*/
     list-style: none;
     border-bottom: 0;
 }
@@ -28,7 +74,7 @@ header{
     transition: all 1.5s ease-in-out;
     max-width: 2em;
     font-family: 'Abril Fatface', cursive;
-    font-size: 30;
+    font-size: 30px;
 }
 .text.hidden li.spaced {
     padding-left: 0;
@@ -41,4 +87,137 @@ header{
 .text.hidden li.ghost {
     opacity: 0;
     max-width: 0;
+}
+/* home container */
+.home-container, about, portfolio, contact{
+    height: 100vh;
+}
+.home-container img{
+    max-width: 95vw;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.home-text-box{
+    height:30vh;
+    width: 50vw;
+    background: rgba(255,255,255,.85);
+    z-index: 1000;
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 100px;
+    bottom: 0;
+    margin: auto;
+    padding:20px;
+}
+
+/* quotes slide show */
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 20px;
+  text-align: center;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #02B3E2;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;
+    font-family: avenir, sans-serif;
+    font-size: 20px;
+    color: #02B3E2;
+    font-weight: 100;
+}
+
+/* Add a grey color to the author */
+.author {color: #bbb;}
+
+/* mini footer*/
+.mini-footer{
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    width: 91vw;
+}
+.mini-footer a{
+    color: #02CBBB;
+    font-family: avenir, sans-serif;
+    font-size: 14px;
+    float: right;
+    transition: all 0.8s;
+}
+.fab{
+    color: #02CBBB;
+    padding-left: 40px;
+    font-size: 30px;
+    opacity: 1;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+.fab:hover, .fas:hover, .mini-footer a:hover{
+    opacity: 0.5;}
+
+.fas{
+    color: #02CBBB;
+    padding-left: 10px;
+    float: right;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+
+
+/* about me*/
+.about{
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+    justify-content: space-around;
+}
+.resume, .about-me{
+    padding: 20px;
+}
+.about-me{
+    justify-content: center;
+}
+.resume img{
+    max-width: 90vw;
+    max-height: 90vh;
+}
+.about-me img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-me *{
+    margin-top: 20px;
+    max-width: 550px;
 }
