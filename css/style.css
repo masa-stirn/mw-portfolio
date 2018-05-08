@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: "freight-text-pro", serif;
+font-style: normal;
+font-weight: 300;
+    font-size: 40;
+}
+/* header */
+header{
+    background: linear-gradient(45deg, #02CCBA, #02B3E4);
+    height: 50px;
+}
+/* logo magic */
+.text {
+    transform: translateX(-5%) translateY(-50%);
+    list-style: none;
+    border-bottom: 0;
+}
+.text li {
+    display: inline-block;
+    float: left;
+    color: #fff;
+    opacity: 1;
+    transition: all 1.5s ease-in-out;
+    max-width: 2em;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30;
+}
+.text.hidden li.spaced {
+    padding-left: 0;
+}
+
+.text li.spaced {
+    padding-left: 0.5em;
+}
+
+.text.hidden li.ghost {
+    opacity: 0;
+    max-width: 0;
+}
