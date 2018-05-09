@@ -30,7 +30,7 @@ font-family: "avenir", san-serif;
     text-align: center
 }
 h5{
-    font-size: 14px;
+    font-size: 11px;
 }
 p{
     font-size: 14px;
@@ -250,6 +250,13 @@ q {font-style: italic;
     background: linear-gradient(45deg, rgba(2,204,186,0.1), rgba(2,179,228,0.1));
     padding-top: 30px;
     width: 320px;
+
+}
+.huset.active, viewfinders.active, yfu.active{
+   background: linear-gradient(45deg, rgba(2,204,186,0.9), rgba(2,179,228,0.9));
+}
+.huset .bottom-box{
+        padding-top: 30px;
 }
 .white-circle{
     width:240px;
@@ -266,11 +273,16 @@ q {font-style: italic;
     left: 0;
     right: 0;
     margin: auto;
+    transition: all .8s;
+    cursor: pointer;
+}
+.white-circle img:hover{
+    transform: scale(0.95)
 }
 .bottom-box{
     background-color: #414143;
     padding: 15px;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 .bottom-box a{
     font-family: "avenir", sans-serif;
@@ -279,6 +291,9 @@ q {font-style: italic;
     text-align: center;
     display: block;
     margin: 10px 0;
+}
+.pad {
+    margin: 10px;
 }
 .hide{
     opacity: 0;
