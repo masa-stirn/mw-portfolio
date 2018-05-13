@@ -8,6 +8,8 @@
     <title>Masa Wu Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta name="description" content="Masa Wu, pixel perfect graphic and user interface dsigner. Focused on user centerd design that provides positive user experiences.">
+    <meta name="keywords" content="designer, graphic design, user interface, user experience, developer, user centered design, graphic designer, user interface designer, user experience designer, photoshop, illustrator, eperience design, premiere pro, app video, design projects, app design, web design">
 </head>
 
 <body>
@@ -16,7 +18,7 @@
             <header>
                 <!-- logo name magic -->
                 <div>
-                    <ul class="text hidden">
+                    <ul class="text">
                         <li>M</li>
                         <li class="ghost">A</li>
                         <li class="ghost">S</li>
@@ -27,64 +29,71 @@
                     </ul>
                 </div>
                 <nav>
+                    <nav class="burgerNav"><div class="burger">&#9776;</div></nav>
+                    <div class="mainNav">
+                        <div class="close">&times;</div>
+                        <a href="#home">HOME</a>
+                        <a href="#about">ABOUT</a>
+                        <a href="#portfolio">PORTFOLIO</a>
+                        <a href="#contact">CONTACT</a>
+                    </div>
                     <div class="navigation">
-                        <a href="#">HOME</a>
-                        <a href="#">ABOUT</a>
-                        <a href="#">PORTFOLIO</a>
-                        <a href="#">CONTACT</a>
-                        <a href="" class="email-me">EMAIL ME</a>
+                        <a href="#home">HOME</a>
+                        <a href="#about">ABOUT</a>
+                        <a href="#portfolio">PORTFOLIO</a>
+                        <a href="#contact">CONTACT</a>
+                        <a href="mailto:info@masawudesign.dk" class="cv-btn hide-btn">EMAIL ME</a>
                     </div>
                 </nav>
 
             </header>
-            <div class="home-container">
-               <div class="home-img">
-                <div class="home-text-box">
-                    <h1 class="home-text-intro">PASSIONATE DESIGNER & DEVELOPER</h1>
-                    <div class="slideshow-container">
+            <div id="home" class="home-container">
+                <div class="home-img">
+                    <div class="home-text-box">
+                        <h1 class="home-text-intro">PASSIONATE DESIGNER & DEVELOPER</h1>
+                        <div class="slideshow-container">
 
-                        <div class="mySlides">
-                            <q>If at first idea is not absurd then it is no hope for it.
+                            <div class="mySlides">
+                                <q>If at first idea is not absurd then it is no hope for it.
                             </q>
-                            <p class="author">- Albert Einstein</p>
-                        </div>
+                                <p class="author">- Albert Einstein</p>
+                            </div>
 
-                        <div class="mySlides">
-                            <q>Design is the bridge between technology and people.</q>
-                            <p class="author">- Donald Norman</p>
-                        </div>
+                            <div class="mySlides">
+                                <q>Design is the bridge between technology and people.</q>
+                                <p class="author">- Donald Norman</p>
+                            </div>
 
-                        <div class="mySlides">
-                            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-                            <p class="author">- Thomas A. Edison</p>
-                        </div>
-                        <div class="dot-container">
-                            <span class="dot" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                        </div>
+                            <div class="mySlides">
+                                <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                                <p class="author">- Thomas A. Edison</p>
+                            </div>
+                            <div class="dot-container">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                            </div>
 
+                        </div>
+                    </div>
+                    <div class="mini-footer">
+                        <i class="fab fa-linkedin-in"><a href="https://www.linkedin.com/in/masa-wu"></a></i>
+                        <i class="fab fa-github"><a href="https://github.com/masa-stirn"></a></i>
+                        <i class="fab fa-codepen"><a href="https://codepen.io/MasaWu/"></a></i>
+
+                        <i class="fas fa-arrow-down"></i>
+                        <a href="#about">READ MORE</a>
                     </div>
                 </div>
-                <div class="mini-footer">
-                <i class="fab fa-linkedin-in"></i>
-                <i class="fab fa-github"></i>
-                <i class="fab fa-codepen"></i>
-
-                <i class="fas fa-arrow-down"></i>
-                <a href="#about">READ MORE</a>
             </div>
-            </div>
-        </div>
         </section>
-        <section class="about">
-            <div class="resume">
-                <img src="images/home/resume-masa-wu.png" alt="image of designed resume" class="resume-img">
-            </div>
+        <section id="about" class="about">
             <div class="about-me">
                 <img src="images/home/masa-wu-avatar-img.png" alt="masa wu profile photo" class="my-img">
+                <div class="heading">
                 <h1>Designer & Developer</h1>
                 <h3>Hi. I design pixel perfect products and user interfaces that focus on delivering quality user experiences. </h3>
+                </div>
                 <p>I am a student at Kea Copenhagen School of Design and Technology, who is passionate about designing seamless solutions, diverse narratives while embracing team collaborations. I am highly motivated and eager to constantly improve, challenge myself and learn as much as possible to produce meaningful user-centered designs. I love working with other inspiring people who feel the same way as I do.</p>
                 <p>In addition to doing design, I love giving and teaching others. At Kea, I started a student organization holding workshops and events that help students grow professionally and gain extra knowledge, build a meaningful network, where they get support and meet like-minded creative thinking enthusiasts.
 
@@ -92,8 +101,11 @@
                 <p>Are you Interested in an enthusiastic and hardworking intern that can transform and bring fresh ideas to the team? In that case, don’t be a stranger and feel free to email me.
                 </p>
             </div>
+            <div class="resume">
+                <img src="images/home/resume-masa-wu.png" alt="image of designed resume" class="resume-img">
+            </div>
         </section>
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
             <div class="heading">
                 <h1>Portfolio</h1>
                 <h3>A selection of app and web design projects focused on delivering quality UI and pleasant UX.</h3>
@@ -101,38 +113,37 @@
             <div class="porfolio-content">
                 <div class="viewfinders">
                     <div class="white-circle">
-                        <img src="images/home/viewfinder-thumbnail.png" alt="phone UI mockup of a project">
+                        <a href="viewfinders.html"><img src="images/home/viewfinder-thumbnail.png" alt="phone UI mockup of a project"></a>
                     </div>
                     <div class="bottom-box">
                         <h4>ViewFinders<br> Web & App</h4>
                         <hr class="pad">
                         <h5 class="">Xd / Ps / Ai / Pr</h5>
-
-                        <a class="hide" href="">Read More</a>
+                        <a class="hide" href="viewfinders.html">Read More</a>
                     </div>
                 </div>
                 <div class="huset active">
                     <div class="white-circle">
-                        <img src="images/home/huset-thumbnail.png" alt="phone UI mockup of a project">
+                        <a href="huset.html"><img src="images/home/huset-thumbnail.png" alt="phone UI mockup of a project"></a>
                     </div>
                     <div class="bottom-box">
                         <h4>Huset Web App</h4>
                         <hr class="pad">
-                        <h5 class="">Ai / Xd / Ps / Pr</h5>
-                        <h5 class="">HTML / CSS / JS / JSON</h5>
-                        <a class="" href="">Read More</a>
+                        <h5>Ai / Xd / Ps / Pr</h5>
+                        <h5>HTML / CSS / JS / JSON</h5>
+                        <a href="huset.html">Read More</a>
                     </div>
                 </div>
                 <div class="yfu">
                     <div class="white-circle">
-                        <img src="images/home/yfu-thumbnail.png" alt="phone UI mockup of a project">
+                        <a href="yfu.html"><img src="images/home/yfu-thumbnail.png" alt="phone UI mockup of a project"></a>
                     </div>
                     <div class="bottom-box">
                         <h4>YFU Video
                             <br>Marketing Campaigne</h4>
-                             <hr class="pad">
+                        <hr class="pad">
                         <h5 class="">Ai / Pr / Ae / Ps</h5>
-<a class="hide" href="">Read More</a>
+                        <a class="hide" href="yfu.html">Read More</a>
                     </div>
                 </div>
             </div>
@@ -140,103 +151,45 @@
                 <div></div>
             </div>
         </section>
-        <section class="contact">
+        <section id="contact" class="contact">
             <div class="contact-box">
-                <h2>Conntact me and lets design beautiful things</h2>
-                <a href="">GET CV</a>
-                <a href="" class="rmail-me">EMAIL ME</a>
-                <div class="grey-side"></div>
+                <h3>Conntact me and lets create something beautiful and unique</h3>
+                <a href="" class="cv-btn">GET CV</a>
+                <a href="mailto:info@masawudesign.dk" class="email-me">EMAIL ME</a>
+                <div class="contact-side"></div>
             </div>
         </section>
-        <div class="side-footer">
-            <p>2018 @COPYRIGHT</p>
-            <p>MASA WU DESIGN</p>
-        </div>
-        <footer>
-            <div class="project">
-                <p>START A PROJECT</p>
-                <p>I am ready for the challenge</p>
-                <p>info@masawudesign.dk</p>
-            </div>
-            <div class="hello">
-                <p>SAY HELLO</p>
-                <p>Let’s make meaningful connections
-                </p>
-                <p>LinkedIn</p>
-            </div>
-            <div class="hello">
-                <p>LOCATION</p>
-                <p>Denmark & Slovenia</p>
-                <p>+45 52 60 00 51, +386 41 619 926</p>
-            </div>
-            <div class="icons">
-                <i class="fab fa-linkedin-in"></i>
-                <i class="fab fa-github"></i>
-                <i class="fab fa-codepen"></i>
-            </div>
-        </footer>
+
     </div>
+    <div class="side-footer">
+        <p>2018 @COPYRIGHT</p>
+        <p>MASA WU DESIGN</p>
+    </div>
+    <footer>
+        <div class="project">
+            <p>START A PROJECT</p>
+            <p>I am ready for the challenge</p>
+            <a href="mailto:info@masawudesign.dk">info@masawudesign.dk</a>
+        </div>
+        <div class="hello">
+            <p>SAY HELLO</p>
+            <p>Let’s make meaningful connections
+            </p>
+            <a href="https://www.linkedin.com/in/masa-wu">LinkedIn</a>
+        </div>
+        <div class="hello">
+            <p>LOCATION</p>
+            <p>Denmark & Slovenia</p>
+            <p>+45 52 60 00 51, +386 41 619 926</p>
+        </div>
+        <div class="icons">
+            <i class="fab fa-linkedin-in"><a href="https://www.linkedin.com/in/masa-wu"></a></i>
+            <i class="fab fa-github"><a href="https://github.com/masa-stirn"></a></i>
+            <i class="fab fa-codepen"><a href="https://codepen.io/MasaWu/"></a></i>
+        </div>
+    </footer>
 
 </body>
-<script>
-    /*slide show dots*/
-var slideIndex = 0; //First, set the slideIndex to 0. (First picture)
-var timer = null; //set timer to null
-showSlides(slideIndex); //Then call function showSlides(slideIndex); to display the first image.
-function currentSlide(n) { //on click fire function currentSlide(n)
-clearTimeout(timer); //clear timeout
-showSlides(slideIndex = n-1); //call function showSides(SlideIndex =n-1);
-}
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 0} //If the slideIndex is higher than the number of elements (slides.length), the slideIndex is set to zero.
-  if (n < 1) {slideIndex = slides.length} //If the slideIndex is less than 1 it is set to number of elements (slides.length).
-  for (i = 0; i < slides.length; i++) { //for loop runs a code muktiple times
-      slides[i].style.display = "none"; //display non all slides
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", ""); //replace class name active with ""
-  }
-  slides[slideIndex-1].style.display = "block"; //displays (display="block") the element with the given slideIndex
-  dots[slideIndex-1].className += " active"; //add class active to the active dot (gray hilight)
-}
-    //automatic slide show
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    timer = setTimeout(showSlides, 3500); // Change image every 3 seconds
-}
-
-    //Logo name magic
-    //    var text = document.querySelectorAll(".text");
-    //
-    //    window.scroll
-    //
-    //    $(function () {
-    //        var text = $(".text");
-    //        $(window).scroll(function () {
-    //            var scroll = $(window).scrollTop();
-    //            if (scroll >= 200) {
-    //                text.removeClass("hidden");
-    //            }
-    //            else {
-    //                text.addClass("hidden");
-    //            }
-    //        });
-    //    });
-</script>
+<script src="js/script.js"></script>
 
 </html>
