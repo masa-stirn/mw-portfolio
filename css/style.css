@@ -46,6 +46,9 @@ a{
 }
 /* header */
 header{
+    background: rgb(2,179,228);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, rgba(2,204,186,0.9), rgba(2,179,228,0.9));
     background: linear-gradient(45deg, rgba(2,204,186,0.9), rgba(2,179,228,0.9));
     width: 100vw;
     position: fixed;
@@ -203,14 +206,13 @@ q {font-style: italic;
 
 
 /* about me*/
+.space{
+    height: 200px;
+}
 .about{
     display: flex;
     flex-direction: row;
-    margin-top: 200px;
     justify-content: space-around;
-}
-.contact, .portfolio{
-     margin-top: 200px;
 }
 .resume, .about-me{
     padding: 20px;
@@ -236,6 +238,7 @@ q {font-style: italic;
 
 .heading{
     padding: 20px;
+    text-align: center;
 }
 .heading h3{
     text-align: center;
@@ -249,12 +252,18 @@ q {font-style: italic;
     justify-content: space-around;
 }
 .viewfinders, .huset, .yfu{
+    background: rgba(2,179,228,.1);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, rgba(2,204,186,0.1), rgba(2,179,228,0.1));
     background: linear-gradient(45deg, rgba(2,204,186,0.1), rgba(2,179,228,0.1));
     padding-top: 30px;
     width: 320px;
 
 }
 .huset.active, viewfinders.active, yfu.active{
+    background: rgb(2,179,228);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, rgba(2,204,186,0.9), rgba(2,179,228,0.9));
    background: linear-gradient(45deg, rgba(2,204,186,0.9), rgba(2,179,228,0.9));
 }
 .huset .bottom-box{
@@ -311,6 +320,9 @@ q {font-style: italic;
     margin-bottom: 200px;
     width: 450px;
     height: 200px;
+    background: rgb(2,179,228);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, rgba(2,204,186,0.9), rgba(2,179,228,0.9));
     background: linear-gradient(45deg, rgba(2,204,186,0.1), rgba(2,179,228,0.1));
     position: relative;
 }
@@ -428,6 +440,9 @@ body{
     position: relative;
 }
 footer{
+    background: rgb(2,179,228);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, rgba(2,204,186,0.9), rgba(2,179,228,0.9));
     background: linear-gradient(45deg, rgba(2,204,186,0.9), rgba(2,179,228,0.9));
     width: 100vw;
     padding: 20px;
@@ -457,6 +472,42 @@ footer .icons .fab{
         display: none;
     }
 /* HUSET SUBPAGE */
+/* videos */
+.huset-clip{
+    position: absolute;
+    width: 188px;
+    height: 340px;
+    margin-left: -2px;
+    margin-top: 120px;
+    display: block;
+    align-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border: 3px solid white;
+    border-top: 10px solid white;
+}
+.viewfinder-clip{
+    position: absolute;
+        width: 190px;
+    height: 338px;
+    margin-left: -17px;
+    margin-top: 185px;
+    display: block;
+    align-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border: 10px solid white;
+    border-top: 20px solid white;
+}
+.yfu-clip{
+   position: absolute;
+    width: 420px;
+    height: 280px;
+    margin-top: 104px;
+    display: block;
+    align-content: center;
+    align-items: center;
+}
 .huset-txt{
     padding-left: 0;
         width: 65vw;
@@ -488,6 +539,9 @@ footer .icons .fab{
         text-align: center;
     }
 @media only screen and (max-width: 1030px) {
+    .space{
+    height: 20px;
+}
     .about{
         display: grid;
         grid-template-rows: auto;
@@ -570,7 +624,7 @@ footer .icons .fab{
     z-index: 2000;
     top: 0vw;
     left: 0vw;
-    background: rgba(2,179,228,0.9);
+    background: rgb(2,179,228);
     /* fallback for old browsers */
     background: -webkit-linear-gradient(45deg, rgba(2,204,186,0.9), rgba(2,179,228,0.9));
     /* Chrome 10-25, Safari 5.1-6 */
@@ -608,9 +662,14 @@ nav{
     }
     .persona-img {
         float: none;}
+/* VIDEO   */
+    .huset-clip, .viewfinder-clip, .yfu-clip{
+        display: none;
+    }
 }
 @keyframes slideMeRight {
     to {
         width: 60%;
     }
 }
+
