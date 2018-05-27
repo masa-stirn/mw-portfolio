@@ -178,6 +178,9 @@ q {font-style: italic;
     left: 50px;
     width: 91vw;
 }
+.align-L {
+        float: left;
+    }
 .mini-footer a{
     color: #02CBBB;
     font-family: avenir, sans-serif;
@@ -576,6 +579,7 @@ footer .icons .fab{
     .mini-footer{
         left:0;
     }
+
     .contact, .portfolio, .about{
      margin-top: 50px;
 }
