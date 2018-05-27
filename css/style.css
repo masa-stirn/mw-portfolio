@@ -216,12 +216,13 @@ q {font-style: italic;
 }
 .resume, .about-me{
     padding: 20px;
+    padding-left: 30px;
 }
 .about-me{
     justify-content: center;
 }
 .resume img{
-    max-width: 65vw;
+    max-width: 50vw;
     max-height: 90vh;
 }
 .about-me img{
@@ -230,7 +231,7 @@ q {font-style: italic;
     margin-right: auto;
 }
 .about-me *{
-    margin-top: 20px;
+/*    margin-top: 20px;*/
     max-width: 550px;
 }
 
@@ -450,6 +451,7 @@ footer{
 }
 footer a {
     text-decoration: underline;
+    padding-left: 5px;
 }
 footer p, footer .fab {
     color: white;
