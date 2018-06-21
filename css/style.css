@@ -421,11 +421,11 @@ nav .cv-btn{
 }
 .contact-side{
     height: 200px;
-    width: 100px;
+    width: 110px;
     background-color: #414143;
     position: absolute;
     top: 0;
-    left:0;
+    left: -10px;
 }
 /* side footer */
 .side-footer{
@@ -564,6 +564,9 @@ footer .icons .fab{
     padding:0;
 }
 @media only screen and (max-width: 700px) {
+    .padding{
+    padding: 0;
+}
     .huset-intro{
             max-width: 90vw;
     }
