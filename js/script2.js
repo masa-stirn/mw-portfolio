@@ -67,3 +67,16 @@ function showSlides2(n) {
   }
   slides2[slideIndex-1].style.display = "block";
 }
+
+// show PPT animation
+let img1 = document.querySelector(".img1");
+let img2 = document.querySelector(".img2");
+
+img1.addEventListener("mouseover", ()=>{
+        img1.classList.add("gone");
+        img2.classList.remove("gone");
+    })
+img2.addEventListener("mouseout", ()=>{
+        img1.classList.remove("gone");
+        img2.classList.add("gone");
+    })

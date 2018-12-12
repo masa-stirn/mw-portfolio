@@ -131,7 +131,9 @@ contact {
     margin: 0 auto;
     background: url(../images/home/masa-wu-landing-page-img.jpg) no-repeat fixed center;
     background-size: cover;
-
+}
+.my-img{
+    width: 350px;
 }
 
 .home-text-box {
@@ -151,7 +153,7 @@ contact {
 /* quotes slide show */
 
 /* Slideshow container */
-.slideshow-container {
+.slideshow-containerH {
     position: relative;
 }
 
@@ -289,6 +291,7 @@ q {
 .heading {
     padding: 20px;
     text-align: center;
+    padding-bottom: 0;
 }
 
 .heading h3 {
@@ -446,6 +449,10 @@ yfu.active {
     padding: 10px 15px;
     transition: all 0.5s;
 }
+.link-btn{
+    max-width: 150px;
+    margin: auto;
+}
 
 .email-me::before,
 .cv-btn::before {
@@ -532,9 +539,7 @@ nav .cv-btn {
     border-radius: 50%;
     border: 3px solid #fff;
     position: relative;
-
     margin: auto;
-
     animation: ninja 8s ease infinite;
 }
 
@@ -844,7 +849,7 @@ background-color: rgb(2, 179, 228);
     font-weight: 100;
     padding: 5px;
     text-decoration: underline;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 
