@@ -13,3 +13,16 @@ let tobiasBtn = document.querySelector(".tobias-btn");
         tobiasPers.classList.add("gone");
         mariaPers.classList.remove("gone");
     })
+
+// show PPT animation
+let img1 = document.querySelector(".img1");
+let img2 = document.querySelector(".img2");
+
+img1.addEventListener("mouseover", ()=>{
+        img1.classList.add("gone");
+        img2.classList.remove("gone");
+    })
+img2.addEventListener("mouseout", ()=>{
+        img1.classList.remove("gone");
+        img2.classList.add("gone");
+    })
