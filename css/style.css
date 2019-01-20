@@ -153,7 +153,7 @@ contact {
 /* quotes slide show */
 
 /* Slideshow container */
-.slideshow-containerH {
+.slideshow-container, slideshow-container2, slideshow-container3 {
     position: relative;
 }
 
@@ -746,7 +746,7 @@ footer .icons .fab {
 
 .huset-txt {
     padding-left: 0;
-    width: 65vw;
+/*    width: 65vw;*/
     text-align: center;
 }
 
@@ -879,7 +879,7 @@ background-color: rgb(2, 179, 228);
         padding:0px;
     }
      .resume img{
-        max-width: 100vw;
+/*        max-width: 100vw;*/
          padding: 0;
     }
 }
@@ -887,6 +887,11 @@ background-color: rgb(2, 179, 228);
 /* YFU SUBPAGE */
 .about .yfu-full-img {
     padding: 0;
+}
+
+.hight-scroll {
+    max-height: 500px;
+    overflow: scroll;
 }
 
 @media only screen and (max-width: 700px) {
