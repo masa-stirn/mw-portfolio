@@ -981,7 +981,7 @@ background-color: rgb(2, 179, 228);
     }
 
     .white-circle {
-        width: auto;
+        width: 95%;
         border-radius: 0;
     }
 
@@ -1076,6 +1076,11 @@ background-color: rgb(2, 179, 228);
     .hover-text {
         left: 40%;
         font-size: 15px;
+    }
+
+/*    // remove buttons on slick, to avoid horizontal scroll  */
+    button.slick-arrow {
+        display: none !important;
     }
 }
 
