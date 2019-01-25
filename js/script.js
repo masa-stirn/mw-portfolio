@@ -1,3 +1,23 @@
+$(document).ready(function(){
+      if (document.body.clientWidth < 800) {
+            $(".center").slick({
+        dots: true,
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+        } else {
+            $(".center").slick({
+        dots: true,
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 3,
+        slidesToScroll: 1
+      });
+        }
+    });
+
 /*slide show dots*/
     var slideIndex = 0; //First, set the slideIndex to 0. (First picture)
     var timer = null; //set timer to null
