@@ -873,7 +873,7 @@ background-color: rgb(2, 179, 228);
         margin: 50px 0;
     }
     .slideshow-container, .slideshow-container2, .slideshow-container3 {
-  width: 100vw;
+/*  width: 100vw;*/
         margin: 0;
 }
     .resume{
@@ -901,7 +901,10 @@ background-color: rgb(2, 179, 228);
     .home-img {
         background-attachment: scroll;
     }
-
+/* arrows bug on slide show box alignment */
+    .slideshow-container, .slideshow-container2, .slideshow-container3 {
+         width: 100vw;
+    }
 
     .padding {
         padding: 0;
