@@ -100,3 +100,7 @@ $(document).ready(function(){
         mainNav.classList.remove("slideMeRight");
     })
 
+// footer date
+var d = new Date();
+document.getElementById("demo").innerHTML = d.getFullYear() + " &copy" + " COPYRIGHT";
+

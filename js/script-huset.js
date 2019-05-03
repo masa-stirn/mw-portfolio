@@ -79,4 +79,9 @@ img1.addEventListener("mouseover", ()=>{
 img2.addEventListener("mouseout", ()=>{
         img1.classList.remove("gone");
         img2.classList.add("gone");
-    })
+    });
+
+// footer date
+var d = new Date();
+document.getElementById("demo").innerHTML = " Designing with love @ Seattle, USA " + d.getFullYear();
+

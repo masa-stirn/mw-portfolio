@@ -94,6 +94,10 @@ function showSlides3(n) {
       slides3[i].style.display = "none";
   }
   slides3[slideIndex3-1].style.display = "block";
-}
+};
+
+// footer date
+var d = new Date();
+document.getElementById("demo").innerHTML = " Designing with love @ Seattle, USA " + d.getFullYear();
 
 
