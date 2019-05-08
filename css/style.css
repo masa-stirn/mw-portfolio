@@ -90,7 +90,7 @@ nav a:hover{
           color:white;
         }
 
-.active{
+.active-nav{
          color:#fff;
          border-bottom:3px solid #fff;
         }
@@ -1060,7 +1060,6 @@ background-color: rgb(2, 179, 228);
     .slideMeRight {
         animation: slideMeRight 1s ease forwards;
     }
-
     /* HUSET */
     .intro-img {
       width: 320px;

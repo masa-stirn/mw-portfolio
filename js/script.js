@@ -89,16 +89,18 @@ $(document).ready(function(){
     // buger menu
 
     let burgerMenu = document.querySelector(".burger");
-    let close = document.querySelector(".close");
+    let close = document.querySelectorAll(".close1");
     let mainNav = document.querySelector(".mainNav");
 
     burgerMenu.addEventListener("click", () => {
         mainNav.classList.add("slideMeRight");
     })
 
-    close.addEventListener("click", () => {
+close.forEach(e => {
+                e.addEventListener("click", () => {
         mainNav.classList.remove("slideMeRight");
     })
+            })
 
 // footer date
 var d = new Date();
@@ -147,8 +149,8 @@ $(window).scroll(function(){
        lastId = id;
        // Set/remove active class
        menuItems
-         .parent().removeClass("active")
-         .end().filter("[href=#"+id+"]").parent().addClass("active");
+         .parent().removeClass("active-nav")
+         .end().filter("[href=#"+id+"]").parent().addClass("active-nav");
    }
 });
 
