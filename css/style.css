@@ -71,21 +71,30 @@ header {
     padding: 20px 30px;
     z-index: 1000;
 }
-
-nav {
-    display: inline-block;
+nav{
     float: right;
 }
 
-nav a {
-    color: #fff;
-    display: inline-block;
-    padding: 10px;
+nav li{
+      display:table-cell;
 }
 
-nav a:hover {
-    color: #e7e7e7;
-}
+nav a{
+        padding:10px 20px;
+        display:inline-block;
+        color:white;
+        text-decoration:none;
+        transition:all 0.3s ease-in-out;}
+
+nav a:hover{
+          color:white;
+        }
+
+.active{
+         color:#fff;
+         border-bottom:3px solid #fff;
+        }
+
 
 /* logo magic */
 .text {
