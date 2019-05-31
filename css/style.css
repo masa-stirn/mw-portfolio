@@ -95,7 +95,6 @@ nav a:hover{
          border-bottom:3px solid #fff;
         }
 
-
 /* logo magic */
 .text {
     /*    transform: translateX(-5%) translateY(-50%);*/
@@ -716,6 +715,10 @@ footer .icons .fab {
 
 /* HUSET SUBPAGE */
 /* videos */
+    .patrol-vid {
+        max-width: 740px;
+    }
+
 .huset-clip {
     position: absolute;
     width: 188px;
