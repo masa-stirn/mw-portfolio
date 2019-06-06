@@ -257,6 +257,22 @@ q {
     cursor: pointer;
 }
 
+/* project links */
+
+.project-links a {
+    color: #02B3E2;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+.project-links a:hover{
+    color: #02CBBB;
+    text-decoration: none;
+}
+.container-project-links {
+    text-align: center;
+}
+
 
 /* about me*/
 .space {
