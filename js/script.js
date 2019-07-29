@@ -104,7 +104,7 @@ close.forEach(e => {
 
 // footer date
 var d = new Date();
-document.getElementById("demo").innerHTML = d.getFullYear() + " &copy" + " COPYRIGHT";
+document.getElementById("footer-date").innerHTML = d.getFullYear() + " &copy" + " COPYRIGHT";
 
 // highlight navigation item on page scroll
 
