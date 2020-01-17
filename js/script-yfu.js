@@ -1,18 +1,42 @@
 // yfu and viewfinders page
-let tobiasBtn = document.querySelector(".tobias-btn");
-    let mariaBtn = document.querySelector(".maria-btn");
+//let tobiasBtn = document.querySelector(".tobias-btn");
+//    let mariaBtn = document.querySelector(".maria-btn");
+//
+//    let tobiasPers = document.querySelector(".tobias-persona");
+//    let mariaPers = document.querySelector(".maria-persona");
+//
+//    tobiasBtn.addEventListener("click", ()=>{
+//        tobiasPers.classList.remove("gone");
+//        mariaPers.classList.add("gone");
+//    })
+//    mariaBtn.addEventListener("click", ()=>{
+//        tobiasPers.classList.add("gone");
+//        mariaPers.classList.remove("gone");
+//    })
 
-    let tobiasPers = document.querySelector(".tobias-persona");
-    let mariaPers = document.querySelector(".maria-persona");
+let tobiasBtn = document.querySelector(".tobias-btn");
+let mariaBtn = document.querySelector(".maria-btn");
+let tobiasPers = document.querySelectorAll(".tobias-persona");
+let mariaPers = document.querySelectorAll(".maria-persona");
 
     tobiasBtn.addEventListener("click", ()=>{
-        tobiasPers.classList.remove("gone");
-        mariaPers.classList.add("gone");
+        tobiasPers.forEach(function(changeme){
+     changeme.classList.remove("gone");
+     });
+        mariaPers.forEach(function(changeme){
+        changeme.classList.add("gone");
+     });
     })
+
     mariaBtn.addEventListener("click", ()=>{
-        tobiasPers.classList.add("gone");
-        mariaPers.classList.remove("gone");
+        mariaPers.forEach(function(changeme){
+     changeme.classList.remove("gone");
+     });
+        tobiasPers.forEach(function(changeme){
+        changeme.classList.add("gone");
+     });
     })
+
 
 // show PPT animation
 let img1 = document.querySelector(".img1");

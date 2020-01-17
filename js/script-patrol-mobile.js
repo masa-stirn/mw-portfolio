@@ -1,17 +1,40 @@
 // yfu and viewfinders page
-let tobiasBtn = document.querySelector(".tobias-btn");
-    let mariaBtn = document.querySelector(".maria-btn");
+//let tobiasBtn = document.querySelector(".tobias-btn");
+//    let mariaBtn = document.querySelector(".maria-btn");
+//
+//    let tobiasPers = document.querySelector(".tobias-persona");
+//    let mariaPers = document.querySelector(".maria-persona");
+//
+//    tobiasBtn.addEventListener("click", ()=>{
+//        tobiasPers.classList.remove("gone");
+//        mariaPers.classList.add("gone");
+//    })
+//    mariaBtn.addEventListener("click", ()=>{
+//        tobiasPers.classList.add("gone");
+//        mariaPers.classList.remove("gone");
+//    })
 
-    let tobiasPers = document.querySelector(".tobias-persona");
-    let mariaPers = document.querySelector(".maria-persona");
+let tobiasBtn = document.querySelector(".tobias-btn");
+let mariaBtn = document.querySelector(".maria-btn");
+let tobiasPers = document.querySelectorAll(".tobias-persona");
+let mariaPers = document.querySelectorAll(".maria-persona");
 
     tobiasBtn.addEventListener("click", ()=>{
-        tobiasPers.classList.remove("gone");
-        mariaPers.classList.add("gone");
+        tobiasPers.forEach(function(changeme){
+     changeme.classList.remove("gone");
+     });
+        mariaPers.forEach(function(changeme){
+        changeme.classList.add("gone");
+     });
     })
+
     mariaBtn.addEventListener("click", ()=>{
-        tobiasPers.classList.add("gone");
-        mariaPers.classList.remove("gone");
+        mariaPers.forEach(function(changeme){
+     changeme.classList.remove("gone");
+     });
+        tobiasPers.forEach(function(changeme){
+        changeme.classList.add("gone");
+     });
     })
 
 // buttons
@@ -22,20 +45,33 @@ let btn1 = document.querySelector(".btn1");
     let second = document.querySelector(".second");
     let third = document.querySelector(".third");
 
+let persona1txt = document.querySelector(".persona1");
+let persona2txt = document.querySelector(".persona2");
+let persona3txt = document.querySelector(".persona3");
+
     btn1.addEventListener("click", ()=>{
         first.classList.remove("gone");
         second.classList.add("gone");
         third.classList.add("gone");
+        persona1txt.classList.remove("gone");
+        persona2txt.classList.add("gone");
+        persona3txt.classList.add("gone");
     })
     btn2.addEventListener("click", ()=>{
         first.classList.add("gone");
         second.classList.remove("gone");
         third.classList.add("gone");
+        persona1txt.classList.add("gone");
+        persona2txt.classList.remove("gone");
+        persona3txt.classList.add("gone");
     })
     btn3.addEventListener("click", ()=>{
         first.classList.add("gone");
         second.classList.add("gone");
         third.classList.remove("gone");
+        persona1txt.classList.add("gone");
+        persona2txt.classList.add("gone");
+        persona3txt.classList.remove("gone");
     })
 
 

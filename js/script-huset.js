@@ -5,21 +5,33 @@ let btn1 = document.querySelector(".btn1");
     let first = document.querySelector(".first");
     let second = document.querySelector(".second");
     let third = document.querySelector(".third");
+let persona1txt = document.querySelector(".persona1");
+let persona2txt = document.querySelector(".persona2");
+let persona3txt = document.querySelector(".persona3");
 
     btn1.addEventListener("click", ()=>{
         first.classList.remove("gone");
         second.classList.add("gone");
         third.classList.add("gone");
+         persona1txt.classList.remove("gone");
+        persona2txt.classList.add("gone");
+        persona3txt.classList.add("gone");
     })
     btn2.addEventListener("click", ()=>{
         first.classList.add("gone");
         second.classList.remove("gone");
         third.classList.add("gone");
+        persona1txt.classList.add("gone");
+        persona2txt.classList.remove("gone");
+        persona3txt.classList.add("gone");
     })
     btn3.addEventListener("click", ()=>{
         first.classList.add("gone");
         second.classList.add("gone");
         third.classList.remove("gone");
+        persona1txt.classList.add("gone");
+        persona2txt.classList.add("gone");
+        persona3txt.classList.remove("gone");
     })
 
 // slideshow1

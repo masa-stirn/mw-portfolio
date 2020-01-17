@@ -22,7 +22,8 @@ h2 {
 }
 
 h3,
-p {
+p,
+figcaption {
     font-family: "avenir", san-serif;
     font-size: 20px;
     color: #02B3E2;
@@ -162,7 +163,7 @@ contact {
 /* quotes slide show */
 
 /* Slideshow container */
-.slideshow-container, slideshow-container2, slideshow-container3 {
+.slideshow-container, .slideshow-container2, .slideshow-container3, .slideshow-container0 {
     position: relative;
 }
 
@@ -171,7 +172,7 @@ contact {
 }
 
 /* Slides */
-.mySlides, .mySlides2, .mySlides3 {
+.mySlides, .mySlides2, .mySlides3, .mySlides0 {
     display: none;
     padding: 20px;
     text-align: center;
@@ -813,10 +814,10 @@ footer.subpage p {
 
 /* slideshow */
 
-.mySlides, .mySlides2, .mySlides3 {display: none}
+.mySlides, .mySlides2, .mySlides3, .mySlides0 {display: none}
 
 /* Slideshow container */
-.slideshow-container, .slideshow-container2, .slideshow-container3 {
+.slideshow-container, .slideshow-container2, .slideshow-container3, .slideshow-container0 {
   max-width: 1000px;
   position: relative;
   margin: auto;
@@ -825,7 +826,7 @@ margin-right: 5%;
 }
 
 /* Next & previous buttons */
-.prev, .next, .prev2, .next2, .prev3, .next3 {
+.prev, .next, .prev2, .next2, .prev3, .next3, .prev0, .next0 {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -842,13 +843,13 @@ background-color: rgb(2, 179, 228);
 }
 
 /* Position the "next button" to the right */
-.next, .next2, .next3 {
+.next, .next2, .next3, .next0 {
   right: 0;
   border-radius: 0 3px 3px 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover, .prev2:hover, .next2:hover, .prev3:hover, .next3:hover  {
+.prev:hover, .next:hover, .prev2:hover, .next2:hover, .prev3:hover, .next3:hover, .prev0:hover, .next0:hover {
   background-color: rgba(2, 179, 228, 0.5);
 }
 
@@ -900,7 +901,7 @@ background-color: rgb(2, 179, 228);
     .full-img-box {
         margin: 50px 0;
     }
-    .slideshow-container, .slideshow-container2, .slideshow-container3 {
+    .slideshow-container, .slideshow-container2, .slideshow-container3, .slideshow-container0 {
 /*  width: 100vw;*/
         margin: 0;
 }
@@ -930,7 +931,7 @@ background-color: rgb(2, 179, 228);
         background-attachment: scroll;
     }
 /* arrows bug on slide show box alignment */
-    .slideshow-container, .slideshow-container2, .slideshow-container3 {
+    .slideshow-container, .slideshow-container2, .slideshow-container3, .slideshow-container0 {
          width: 100vw;
     }
 
